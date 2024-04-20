@@ -4,11 +4,11 @@ const students = {
     "Prakash": "10th",
     "Dhruv": "10th",
     "Ankit": "10th",
-    "Ayush": "10th"
-  "Arman": "9th"
-  "Basudev": "9th"
-  "Swagat": "9th"
-  "Tapas": "9th"
+    "Ayush": "10th",
+  "Arman": "9th",
+  "Basudev": "9th",
+  "Swagat": "9th",
+  "Tapas": "9th",
   "Victor": "9th"
 };
 
