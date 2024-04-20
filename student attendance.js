@@ -1,15 +1,15 @@
 // Define students and their corresponding classes
 const students = {
-    "Tofan": "10th",
-    "Prakash": "10th",
-    "Dhruv": "10th",
-    "Ankit": "10th",
-    "Ayush": "10th",
-  "Arman": "9th",
-  "Basudev": "9th",
-  "Swagat": "9th",
-  "Tapas": "9th",
-  "Victor": "9th"
+    "TOFAN": "10th",
+    "PRAKASH": "10th",
+    "DHRUV": "10th",
+    "ANKIT": "10th",
+    "AYUSH": "10th",
+  "ARMAN": "9th",
+  "BASUDEV": "9th",
+  "SWAGAT": "9th",
+  "TAPAS": "9th",
+  "vVICTOR": "9th"
 };
 
 // Define subject-related questions
