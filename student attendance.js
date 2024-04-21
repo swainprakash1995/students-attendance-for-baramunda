@@ -44,18 +44,18 @@ if (userConfirmation) {
         const studentClass = students[studentName];
         alert(`Welcome, ${studentName}! You are in class ${studentClass}.`);
 
-        function takeAttendance(studentName) {    
+        function takeAttendance(students) {    
             let attendance = [];
             let signIns = {};
             let work = {};
             let signOuts = {};
             
-            let signInTime = prompt(`Enter sign-in time for ${studentName} (HH:MM AM/PM)`);    
-            signIns[studentName] = signInTime;
+            let signInTime = prompt(`Enter sign-in time for ${students} (HH:MM AM/PM)`);    
+            signIns[students] = signInTime;
 
-            let subject = prompt(`Which subject do you want to study, ${studentName}? (e.g., Math, Science, History)`);    
+            let subject = prompt(`Which subject do you want to study, ${students}? (e.g., Math, Science, History)`);    
             const subjectKey = subject.toLowerCase();
-            work[studentName] = subjectKey;
+            work[students] = subjectKey;
 
             // Check if the subject has related questions
             if (subjectQuestions.hasOwnProperty(subjectKey)) {
@@ -69,17 +69,17 @@ if (userConfirmation) {
                 alert("Invalid subject selected.");
             }
                     
-            let signOutTime = prompt(`Enter sign-out time for ${studentName} (HH:MM AM/PM)`);    
-            signOuts[studentName] = signOutTime;   
+            let signOutTime = prompt(`Enter sign-out time for ${students} (HH:MM AM/PM)`);    
+            signOuts[students] = signOutTime;   
             return { attendance, signIns, work, signOuts };
         }
 
         function manageAttendance() {    
             if (userConfirmation) {        
-                let { attendance, signIns, work, signOuts } = takeAttendance(studentName);
+                let { attendance, signIns, work, signOuts } = takeAttendance(students);
                 
                 // Show student's name, class, sign-in time, sign-out time, and subject
-                alert(`Name: ${studentName}\nClass: ${studentClass}\nSign-in time: ${signIns[studentName]}\nSign-out time: ${signOuts[studentName]}\nSubject: ${work[studentName]}`);
+                alert(`Name: ${students}\nClass: ${studentClass}\nSign-in time: ${signIns[students]}\nSign-out time: ${signOuts[studentName]}\nSubject: ${work[studentName]}`);
             }
         }
         manageAttendance();
